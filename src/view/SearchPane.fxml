@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controller.Search">
+   <children>
+      <HBox alignment="CENTER" prefHeight="42.0" prefWidth="600.0">
+         <children>
+            <Button fx:id="searchButton" mnemonicParsing="false" onAction="#searchAction" prefHeight="25.0" prefWidth="119.0" text="Search" />
+            <TextField fx:id="searchTextFiled" prefHeight="25.0" prefWidth="394.0" promptText="Book title">
+               <opaqueInsets>
+                  <Insets left="22.0" />
+               </opaqueInsets>
+            </TextField>
+         </children>
+      </HBox>
+       <TableView fx:id="TableView" layoutX="41.0" layoutY="52.0" prefHeight="317.0" prefWidth="519.0">
+           <columns>
+               <TableColumn fx:id="idColumn" prefWidth="35.0" text="ID" />
+               <TableColumn fx:id="titleColumn" prefWidth="120.0" text="Title" />
+               <TableColumn fx:id="authorColumn" prefWidth="120.0" text="Author" />
+
+               <TableColumn fx:id="authorid" prefWidth="120.0" text="Author ID" />
+               <TableColumn fx:id="yearColumn" prefWidth="60.0" text="Year" />
+               <TableColumn fx:id="pagesColumn" prefWidth="60.0" text="Pages" />
+           </columns>
+       </TableView>
+   </children>
+</AnchorPane>
